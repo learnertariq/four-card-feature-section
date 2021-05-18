@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+/* collor pallete */
+
+:root {
+  --color-primary: hsl(180, 62%, 55%);
+  --color-secondary: hsl(212, 86%, 64%);
+  --color-accent: hsl(34, 97%, 64%);
+  --color-danger: hsl(0, 70%, 62%);
+  --color-dark: hsl(234, 12%, 34%);
+  --color-light: hsl(229, 6%, 66%);
+  --color-white: hsl(0, 0%, 98%);
+}
+
+/* global section */
+.container {
+  padding: 10px 10%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 10px 5%;
+  }
+}
+
+/* Block details */
+.block-details {
+  text-align: center;
+}
+
+.details__heading--light {
+  color: var(--color-dark);
+  font-size: 2.5rem;
+  font-weight: 200;
+  line-height: 1;
+}
+
+.details__heading--focus {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.details__body {
+  color: var(--color-light);
+}
+
+@media screen and (min-width: 500px) {
+  .details__heading--light {
+    font-size: 3rem;
+  }
+
+  .details__heading--focus {
+    font-size: 3rem;
+  }
+}
+
+/* block */
+.block {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .block-details {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  .block-showcase {
+    flex-direction: row;
+    align-items: center;
+  }
+  .block {
+    margin-bottom: 3rem;
+  }
+}
+
+/* card */
+.card {
+  display: flex;
+  flex-direction: column;
+  border-top: 1rem solid var(--color-primary);
+  box-shadow: 0 0 3rem var(--color-light);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin: 1rem;
+  }
+}
+
+.card--primary {
+  border-color: var(--color-primary);
+}
+
+.card--secondary {
+  border-color: var(--color-secondary);
+}
+
+.card--accent {
+  border-color: var(--color-accent);
+}
+
+.card--danger {
+  border-color: var(--color-danger);
+}
+
+.card__text {
+  color: var(--color-dark);
+}
+
+.card__image {
+  width: 8rem;
+  margin: 3rem 6rem;
+  margin-top: 5rem;
+  align-self: flex-end;
+}
